@@ -1,1 +1,20 @@
+# datasets grandes
+raw/*.csv
+bronze/*
+prata/*
 
+# arquivos compactados
+*.rar
+*.zip
+
+# ambiente virtual
+.venv/
+venv/
+
+# arquivos python
+__pycache__/
+*.pyc
+
+# arquivos do sistema
+.DS_Store
+Thumbs.db
