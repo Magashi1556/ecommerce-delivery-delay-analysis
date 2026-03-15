@@ -164,3 +164,7 @@ Outras variáveis relevantes não foram exploradas neste estudo, como:
 ∙ valor do frete
 
 O dataset possui potencial para análises adicionais que podem ampliar os insights obtidos.
+
+## Exemplo de Visualização
+
+![Delay vs Reviews](C:/Users/Erik/Desktop/PJT-EDA assistencia/imagem/scatter_delay_reviews.png)
