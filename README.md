@@ -1,11 +1,11 @@
-#Contexto do problema
+# Contexto do problema
 
 Este projeto tem como objetivo investigar se atrasos logísticos em entregas de e-commerce influenciam a satisfação do cliente, medida pela nota de avaliação do pedido (review score).
 
 A análise busca responder à seguinte pergunta:
   Atrasos na entrega impactam significativamente a avaliação dos clientes?
 ---
-#Dataset
+# Dataset
 
 Dataset utilizado:
 Olist Brazilian E-Commerce Public Dataset
@@ -22,17 +22,17 @@ O dataset contém informações sobre:
 ∙ avaliações
 ∙ logística de entrega
 ---
-#Pipeline de dados
+# Pipeline de dados
 
 O projeto foi estruturado seguindo o conceito de Medallion Architecture, com separação das camadas de dados.
-##Raw
+## Raw
 Contém os dados originais em formato CSV exatamente como disponibilizados no Kaggle.
 
-##Bronze
+## Bronze
 
 Etapa de ingestão dos dados, onde os arquivos CSV foram carregados e convertidos para formato Parquet, permitindo maior eficiência de leitura e armazenamento.
 
-##Prata (Silver)
+## Prata (Silver)
 
 Nesta camada foram realizadas:
 ∙ limpeza de dados
@@ -40,7 +40,7 @@ Nesta camada foram realizadas:
 ∙ tratamento de inconsistências
 ∙ preparação das tabelas para análise
 
-##Ouro (Gold)
+## Ouro (Gold)
 
 Camada analítica final onde foi construído o dataset consolidado de pedidos (gold_orders), incluindo:
 ∙ métricas logísticas
@@ -49,7 +49,7 @@ Camada analítica final onde foi construído o dataset consolidado de pedidos (g
 ∙ variáveis derivadas de atraso
 Essa camada foi utilizada para realizar a análise exploratória e estatística.
 ---
-#Metodologia
+# Metodologia
 
 A metodologia adotada foi focada na análise da relação entre:
 ∙ dias de atraso na entrega
@@ -63,7 +63,7 @@ As seguintes técnicas foram utilizadas:
 ∙ Regressão quadrática para investigar possíveis relações não lineares
 A correlação de Spearman foi escolhida devido à natureza ordinal da variável de avaliação (review score).
 ---
-#Análise estatística
+# Análise estatística
 
 A análise estatística mostrou uma correlação negativa moderada entre atraso na entrega e avaliação do cliente.
 
@@ -83,13 +83,13 @@ Outros fatores provavelmente influenciam a avaliação, como:
 ∙ comunicação com o vendedor
 ∙ condições de entrega
 ---
-#Resultados
+# Resultados
 
 A análise por faixas de atraso revelou um ponto crítico na experiência do cliente.
 Pedidos com mais de 5 dias de atraso apresentam queda significativa na avaliação média.
 Esse comportamento indica uma zona crítica de atraso logístico, onde a percepção negativa do cliente aumenta de forma acentuada.
 ---
-#Insights
+# Insights
 
 Principais insights obtidos:
 ∙ A nota média geral do dataset é aproximadamente 4.2
@@ -97,7 +97,7 @@ Principais insights obtidos:
 ∙ Atrasos superiores a 5 dias apresentam forte impacto negativo na satisfação do cliente
 Esses resultados reforçam a importância da eficiência logística no e-commerce, especialmente no controle de atrasos.
 ---
-#Limitações do estudo
+# Limitações do estudo
 
 Este projeto focou exclusivamente na relação entre atraso logístico e avaliação do cliente.
 Outras variáveis relevantes não foram exploradas neste estudo, como:
